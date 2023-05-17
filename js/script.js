@@ -49,9 +49,18 @@ playBtn.addEventListener('click', function(){
 
     if (userDice.toFixed(0) > botDice.toFixed(0)){
         finalResult.innerHTML = 'You won!';
+        finalResult.classList.add('text-success');
+        finalResult.classList.remove('text-danger');
+        finalResult.classList.remove('text-secondary');
     } else if (userDice.toFixed(0) < botDice.toFixed(0)){
         finalResult.innerHTML = 'You lose! :(';
+        finalResult.classList.add('text-danger');
+        finalResult.classList.remove('text-success');
+        finalResult.classList.remove('text-secondary');
     } else {
         finalResult.innerHTML = 'DRAW!'
+        finalResult.classList.add('text-secondary');
+        finalResult.classList.remove('text-success');
+        finalResult.classList.remove('text-danger');
 }
 });
