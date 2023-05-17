@@ -16,7 +16,7 @@ const playBtn = document.getElementById('playGame');
 loginBtn.addEventListener('click', function(){
     let userMail = document.querySelector('input#userMail');
     for (let i = 0; i < loggedMail.length; i++){
-        if (userMail.value === loggedMail.at(i)){
+        if (userMail.value === loggedMail[i]){
             loginMsg.innerHTML = 'WELCOME BACK!';
 
             loginMsg.classList.add('text-success');
@@ -37,8 +37,8 @@ loginBtn.addEventListener('click', function(){
 });
 
 playBtn.addEventListener('click', function(){
-    const userDice = Math.random() * (6 - 1) + 1;
-    const botDice = Math.random() * (6 - 1) + 1;
+    const userDice = Math.random() * (5) + 1;
+    const botDice = Math.random() * (5) + 1;
 
     const userResult = document.getElementById('userResult');
     const botResult = document.getElementById('botResult');
