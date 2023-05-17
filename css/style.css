@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(87, 87, 253);
+    height: 100vh;
+
+}
+
+main{
+    background-color: beige;
+    border-radius: 2rem;
+}
+
+#output{
+    font-size: 1.5rem;
+}

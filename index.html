@@ -8,14 +8,18 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>BestDiceBot - Login</title>
 </head>
-<body>
-    <main>
-        <h1>Feelin' Lucky?</h1>
+<body class="d-flex text-center">
+    <main class="m-auto p-5">
+        <h1 class="pb-4">Feelin' Lucky?</h1>
         <div class="ivy_login">
-            <input type="email" name="userMail" id="userMail">
-            <button id="loginBtn">Log In</button>
+            <input type="email" name="userMail" id="userMail" class="text-center">
+            <button id="loginBtn" class="btn-primary rounded">Log In</button>
             <pre id="output"></pre>
         </div>
+        <button id="playGame" class="btn btn-warning my-4" disabled>Lancia i Dadi!</button>
+        <p class="ivy_game_result" id="userResult"></p>
+        <p class="ivy_game_result" id="botResult"></p>
+        <p class="ivy_game_result" id="finalResult"></p>
     </main>
     <script src="./js/script.js"></script>
 </body>
